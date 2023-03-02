@@ -36,5 +36,4 @@ public class GreetingServlet extends HttpServlet {
 		writer.println("<h2>You are from: " + country + "</h2>");
 		writer.close();
 	}
-
 }
