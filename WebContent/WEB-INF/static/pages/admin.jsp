@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
@@ -18,7 +20,7 @@
         }
     }
 %>
-<h3>Hi <%=userName %>, Login successful. Your Session ID=<%=sessionID %></h3>
+<h3>Hi <%=userName %> <c:out value="${user}"/> , Login successful. Your Session ID=<%=sessionID %></h3>
 <br>
 User=<%=user %>
 <br>

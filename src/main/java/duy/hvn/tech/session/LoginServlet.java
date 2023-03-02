@@ -31,6 +31,8 @@ public class LoginServlet extends HttpServlet {
             userName.setMaxAge(30 * 60);
             response.addCookie(userName);
 
+            request.getSession().setAttribute("user", user);
+
             response.sendRedirect(request.getContextPath() + "/admin/adminServlet");
         } else {
             RequestDispatcher rd = getServletContext().getRequestDispatcher("WEB-INF/static/pages/login.jsp");
