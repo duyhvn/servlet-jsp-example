@@ -24,6 +24,8 @@
 <br>
 User=<%=user %>
 <br>
+<h4>Location: <c:out value="${admin.location}"/></h4>
+<h5>City: <c:out value="${admin.city}"/></h5>
 <a href="CheckoutPage.jsp">Checkout Page</a>
 <form action="logout" method="post">
     <input type="submit" value="Logout" >

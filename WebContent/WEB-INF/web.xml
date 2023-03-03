@@ -6,6 +6,10 @@
         <welcome-file>default.jsp</welcome-file>
     </welcome-file-list>
 
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
     <servlet>
         <servlet-name>homeServlet</servlet-name>
         <servlet-class>duy.hvn.tech.controller.HomeServlet</servlet-class>
