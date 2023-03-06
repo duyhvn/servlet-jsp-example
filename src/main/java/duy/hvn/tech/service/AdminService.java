@@ -1,11 +1,11 @@
 package duy.hvn.tech.service;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class AdminService {
-    private String location="Mount Road";
-    private String city="Chennai";
+    private String location="Vietnam";
+    private String city="Hue";
     public String getLocation() {
         return location;
     }

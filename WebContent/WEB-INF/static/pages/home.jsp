@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: macintoshhd
@@ -12,25 +13,15 @@
 </head>
 <body>
 
-<h3>Hello World Java EE: Servlet and JSP</h3>
+<h3>Hello World Java EE: Spring MVC, Servlet and JSP</h3>
 
 <div>
-    <form action="sayGreeting" method="post">
-        <label for="firstName">First Name</label>
-        <input type="text" id="firstName" name="firstName" placeholder="Your name..">
+    <h1>Welcome to Our Company</h1>
 
-        <label for="lastName">Last Name</label>
-        <input type="text" id="lastName" name="lastName" placeholder="Your last name..">
-
-        <label for="country">Country</label>
-        <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-        </select>
-
-        <input type="submit" value="Submit">
-    </form>
+    <p>Pages (HTML)</p>
+    <p>Location: <c:out value="${obj.location}"/></p>
+    <p>City: <c:out value="${obj.city}"/></p>
+    <p>Computer Code (JavaScript)</p>
 </div>
 
 </body>

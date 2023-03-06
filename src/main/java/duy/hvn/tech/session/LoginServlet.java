@@ -33,7 +33,7 @@ public class LoginServlet extends HttpServlet {
 
             request.getSession().setAttribute("user", user);
 
-            response.sendRedirect(request.getContextPath() + "/admin/adminServlet");
+            response.sendRedirect(request.getContextPath() + "/admin/hello");
         } else {
             RequestDispatcher rd = getServletContext().getRequestDispatcher("WEB-INF/static/pages/login.jsp");
             PrintWriter out = response.getWriter();

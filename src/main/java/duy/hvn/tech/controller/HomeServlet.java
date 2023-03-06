@@ -31,22 +31,5 @@ public class HomeServlet extends HttpServlet {
 
 		RequestDispatcher view = request.getRequestDispatcher("WEB-INF/static/pages/home.jsp");
 		view.forward(request, response);
-
-		/*PrintWriter writer = response.getWriter();
-		String str = "<html>\n" +
-				"<head>\n" +
-				"    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n" +
-				"    <title>Home</title>\n" +
-				"</head>\n" +
-				"<body>\n" +
-				"<h1>Hello JSP and Servlet!</h1>\n" +
-				"<form action=\"helloServlet\" method=\"post\">\n" +
-				"    Enter your name: <input type=\"text\" name=\"yourName\" size=\"20\">\n" +
-				"    <input type=\"submit\" value=\"Call Servlet\"/>\n" +
-				"</form>\n" +
-				"</body>\n" +
-				"</html>";
-		writer.println(str);
-		writer.close();*/
 	}
 }
